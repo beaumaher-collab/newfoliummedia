@@ -1,13 +1,60 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>New Folium Media</title>
-<meta name="description" content="Where imagination becomes reality. Bringing bold ideas and original stories to life across publishing, film and beyond.">
-<style>
-html,body{margin:0;min-height:100%;background:#ecd2b4}body{display:grid;place-items:center;min-height:100svh}main{position:relative;width:100%;max-width:1600px}img{display:block;width:100%;height:auto}a{position:absolute;left:33.4%;top:85.0%;width:33.2%;height:7%;border-radius:8px}a:focus-visible{outline:3px solid #222;outline-offset:2px}@media(max-width:650px){body{min-height:100svh}main{width:100%;}a{top:84%;height:9%}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Folium Media</title>
+  <meta name="description" content="New Folium Media — contact us by email.">
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      background: #ead1b5;
+      color: #100f0d;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    main {
+      min-height: 100svh;
+      padding: 32px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(16px, 3vh, 30px);
+    }
+    .logo {
+      display: block;
+      width: min(56vw, 460px);
+      max-width: 100%;
+      max-height: 73svh;
+      height: auto;
+      object-fit: contain;
+    }
+    a.contact {
+      display: inline-block;
+      color: inherit;
+      font-size: clamp(15px, 1.6vw, 19px);
+      font-weight: 400;
+      letter-spacing: .09em;
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 5px;
+      white-space: nowrap;
+    }
+    a.contact:hover, a.contact:focus-visible { opacity: .70; }
+    a.contact:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+    @media (max-width: 600px) {
+      main { padding: 24px 14px; gap: 22px; }
+      .logo { width: min(80vw, 360px); max-height: 68svh; }
+      a.contact { font-size: 14px; letter-spacing: .03em; }
+    }
+  </style>
 </head>
-<body><main><img src="landing.png" alt="New Folium Media. Where imagination becomes reality. Bringing bold ideas and original stories to life across the worlds of publishing, film and beyond. Contact: contact@newfoliummedia.com"><a href="mailto:contact@newfoliummedia.com" aria-label="Email New Folium Media"></a></main></body>
+<body>
+  <main>
+    <img class="logo" src="new-folium-logo-hd.png" alt="New Folium Media">
+    <a class="contact" href="mailto:contact@newfoliummedia.com">contact@newfoliummedia.com</a>
+  </main>
+</body>
 </html>
